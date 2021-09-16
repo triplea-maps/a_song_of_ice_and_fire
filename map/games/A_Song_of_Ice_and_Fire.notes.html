@@ -1,0 +1,1242 @@
+<html>
+    <body bgcolor="DADADA" align="center">
+        <div style="text-align: center; padding: 10px">
+            <br/>
+            <img src="mapScreenshot.png"/>
+            <h1 style="font-size:200%;color:660000">A Song of Ice and Fire</h1>
+            <span style="font-size:120%">
+                <b>Version 1.0</b>
+            </span>
+            <br/>
+            <br/>
+            <b>Created by: Kor438</b>
+            <br/>
+            <b>Updated by: Redrum</b>
+            <br/>
+            Map image by: Astrogator87
+            <br/>
+            <br/>
+            <h1>Victory Conditions</h1>
+            Total Victory - 15 Victory Cities
+            <br/>
+            Honorable Surrender - 12 Victory Cities
+            <br/>
+            Projection of Power - 9 Victory Cities
+
+            <h1>Technology</h1>
+            <h2>Arms and Tactics</h2>
+            <ul>
+                <li>Heavy Armor (HA): All infantry and cavalry except Peasants, Slaves, Direwolves, and Mammoths get +1 defense.</li>
+                <li>Improved Infantry Training (IT): Cost reduced by about 1/4 for all infantry.</li>
+                <li>Longbows (LB): Archers, HorseArchers, and Wildlings get +1 attack.</li>
+                <li>Valyrian Steel (VS): Knights and other upper-tier infantry and cavalry (usually base attack 3 or better) get +1 attack.</li>
+                <li>Volley Fire (VF): Archers and HorseArchers give +1 support on defense.</li>
+            </ul>
+            <h2>Engineering and Infrastructure</h2>
+            <ul>
+                <li>Advanced Fortification (AF): Walls give +1 defense to one defending infantry or artillery; Castles give +1 defense to up to three.</li>
+                <li>Grapeshot (GS): Catapults and Trebuchets roll twice for attack and defense.</li>
+                <li>Smithies (SM): Castles get +2 production in territories with value 3 or higher.</li>
+                <li>War Bonds (WB): Gain 1-12 extra PUs per turn.</li>
+            </ul>
+            <h2>Naval</h2>
+            <ul>
+                <li>Carrack Construction (CC): Allows production of Carracks; allows Dothraki to produce Galleys instead (at normal cost, even with Shipyards).</li>
+                <li>Improved Rigging (IR): All ships except Rafts get +1 movement.</li>
+                <li>Reinforced Hulls (RH): All ships except Rafts get +1 defense.</li>
+                <li>Shipyards (SY): Rafts' cost reduced by 1; all other ships' costs except Carracks reduced by 2; Dothraki can build Cogs (at normal cost).</li>
+                <li>Wildfire (WF): All ships except Rafts get +1 attack, and Galleys and Longships can bombard.</li>
+            </ul>
+
+            <h1>Common Units</h1>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Structures</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Castle.png"/>
+                    </td>
+                    <td>Castle</dt>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>20</td>
+                    <td/>
+                    <td>Allows production of other units; Immobile; Capturable; -2 attack for up to five opposing infantry or cavalry; (AF: +1 defense to up to three infantry or artillery)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Wall.png"/>
+                    </td>
+                    <td>Wall</dt>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td/>
+                    <td>Doesn't require Castle; Max build 1/territory/turn; Immobile; Capturable; -2 attack for up to three opposing infantry or cavalry; (AF: +1 defense to one infantry or artillery)</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <td colspan="8">All infantry except Wights gain +1 defense in forest and hills terrain.</td>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Peasant.png"/>
+                    </td>
+                    <td>Peasant</dt>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td/>
+                    <td>2</td>
+                    <td>Cannot be purchased; 1 generated per 4 territories controlled (IT: 1 per 3 territories)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Sellsword.png"/>
+                    </td>
+                    <td>Sellsword</dt>
+                    <td>3</td>
+                    <td>3<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>3<br/>(IT:2)</td>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Archer.png"/>
+                    </td>
+                    <td>Archer</dt>
+                    <td>2<br/>(LB:+1)</td>
+                    <td>4<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>4<br/>(IT:3)</td>
+                    <td>2</td>
+                    <td>Additional +1 defense in hills terrain; Supports one unit on offense; (VF: Supports one unit on defense)</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <td colspan="8">All cavalry except Others lose -1 attack in forest and hills terrain and cannot blitz in either.</td>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Knight.png"/>
+                    </td>
+                    <td>Knight</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>Can blitz</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Artillery</th>
+                </tr>
+                <tr>
+                    <td colspan="8">All artillery gain +1 defense in hills terrain and +3 offense when attacking Castles.</td>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Catapult.png"/>
+                    </td>
+                    <td>Catapult</dt>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>Supports two units on offense; (GS:2 rolls for attack/defense)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Trebuchet.png"/>
+                    </td>
+                    <td>Trebuchet</dt>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>Supports three units on offense; (GS:2 rolls for attack/defense)</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Sea</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Raft.png"/>
+                    </td>
+                    <td>Raft</dt>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3<br/>(SY:2)</td>
+                    <td/>
+                    <td>Transport capacity 3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Cog.png"/>
+                    </td>
+                    <td>Cog</dt>
+                    <td>1<br/>(WF:+1)</td>
+                    <td>2<br/>(RH:+1)</td>
+                    <td>2<br/>(IR:+1)</td>
+                    <td>8<br/>(SY:6)</td>
+                    <td/>
+                    <td>Transport capacity 5</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Galley.png"/>
+                    </td>
+                    <td>Galley</dt>
+                    <td>5<br/>(WF:+1)</td>
+                    <td>5<br/>(RH:+1)</td>
+                    <td>2<br/>(IR:+1)</td>
+                    <td>10<br/>(SY:8)</td>
+                    <td/>
+                    <td>(WF:Can bombard)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Neutral-Carrack.png"/>
+                    </td>
+                    <td>Carrack</dt>
+                    <td>7<br/>(WF:+1)</td>
+                    <td>7<br/>(RH:+1)</td>
+                    <td>2<br/>(IR:+1)</td>
+                    <td>18</td>
+                    <td/>
+                    <td>Two hits to kill; Can bombard; Requires Carrack Construction tech</td>
+                </tr>
+            </table>
+
+            <h1>Players</h1>
+            <!-- in turn order -->
+
+            <h2>Night's Watch</h2>
+            <b>At war with Dothraki and Free Folk.  Open Borders with Stark.  Ceasefire with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="NightsWatch-Northman.png"/>
+                    </td>
+                    <td>Northman</dt>
+                    <td>4<br/>(VS:+1)</td>
+                    <td>4<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td/>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="NightsWatch-Direwolf.png"/>
+                    </td>
+                    <td>Direwolf</dt>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td/>
+                    <td>3</td>
+                    <td>Two hits to kill</td>
+                </tr>
+            </table>
+            <b>Begins with two Northmen and one Direwolf, but cannot produce more.</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+5 - The Wall</b>:<br/>
+	    Control The Wall
+                </li>
+            </ul>
+
+            <h2>Targaryen</h2>
+            <b>Open Borders with Martell.  Ceasefire with Greyjoy, Night's Watch, and Tyrell.  At war with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Targaryen-Unsullied.png"/>
+                    </td>
+                    <td>Unsullied</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>5<br/>(IT:4)</td>
+                    <td>2</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Targaryen-Kingsguard.png"/>
+                    </td>
+                    <td>Kingsguard</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>2</td>
+                    <td/>
+                    <td>3</td>
+                    <td>Can blitz; Two hits to kill</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Air</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Targaryen-Dragon.png"/>
+                    </td>
+                    <td>Dragon</dt>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>4<br/>(DG:+1)</td>
+                    <td/>
+                    <td/>
+                    <td>Two hits to kill; (DG:2 rolls for attack)</td>
+                </tr>
+            </table>
+            <b>Cannot produce Catapults or Trebuchets.  Begins with one Knight, one Kingsguard, and three Dragons, but cannot produce more.</b>
+            <br/>
+            <b>Cannot gain Grapeshot technology; instead gets Dragon Growth (DG): Dragons get +1 movement and roll twice for attack.</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - Slaver's Bay</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+5 - A Foothold in Westeros</b>:<br/>
+	    Control any territory on mainland Westeros
+                </li>
+            </ul>
+
+            <h2>Greyjoy</h2>
+            <b>Ceasefire with Free Cities, Night's Watch, and Targaryen.  At war with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Greyjoy-IronRaider.png"/>
+                    </td>
+                    <td>Iron Raider</dt>
+                    <td>4</td>
+                    <td>2<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>3<br/>(IT:2)</td>
+                    <td>2</td>
+                    <td>+1 amphibious attack</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Sea</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Greyjoy-Longship.png"/>
+                    </td>
+                    <td>Longship</dt>
+                    <td>6<br/>(WF:+1)</td>
+                    <td>5<br/>(RH:+1)</td>
+                    <td>2<br/>(IR:+1)</td>
+                    <td>10<br/>(SY:8)</td>
+                    <td/>
+                    <td>Supportable; (WF:Can bombard)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Greyjoy-Greatship.png"/>
+                    </td>
+                    <td>Greatship</dt>
+                    <td>8<br/>(WF:+1)</td>
+                    <td>7<br/>(RH:+1)</td>
+                    <td>2<br/>(IR:+1)</td>
+                    <td>14<br/>(SY:12)</td>
+                    <td/>
+                    <td>Supports one unit on offense; Can bombard; Transport capacity 3</td>
+                </tr>
+            </table>
+            <b>Cannot produce Galleys.</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Iron Islands</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+3 - Secure Ironman's Bay</b>:<br/>
+	    Control Faircastle and all of the Iron Islands (Blacktyde, Great Wyk, Old Wyk, Orkmont, Harlaw, Saltcliffe, and Pyke) and no enemy ships in adjacent sea zones (The Iron Islands Sea Zone, Ironman's Bay Sea Zone, and Gold Coast Sea Zone)
+                </li>
+                <li>
+                    <b>+4 - Raid the Riverlands</b>:<br/>
+	    Control 3 in 5 of Cape of Eagles, The Twins, Seagard, Fairmarket, and Raventree Hall
+                </li>
+                <li>
+                    <b>+4 - Raid the Westerlands</b>:<br/>
+	    Control 3 in 5 of Banefort, The Crag, Ashemark, Sarsfield, and Kayce
+                </li>
+                <li>
+                    <b>+4 - Raid the North</b>:<br/>
+	    Control 4 in 10 of Cape Kraken, Flint's Finger, Whispering Wood, Barrowton, The Rills, Sea Dragon Point, Stony Shore, Deepwood Motte, Mountain Clans, and Bear Island
+                </li>
+                <li>
+                    <b>+4 - Rule the Sunset Sea</b>:<br/>
+                </li>
+	  Control all of The Shield Islands and The Arbor; and no enemy ships between Lannisport and The Arbor (South Sunset Sea Zone, The Shield Islands Sea Zone, Redwyne Straits Sea Zone, and Whispering Sound Sea Zone)
+            </li>
+
+            <h2>Free Folk</h2>
+            <b>At war with all other players.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeFolk-Wildling.png"/>
+                    </td>
+                    <td>Wildling</dt>
+                    <td>3<br/>(LB:+1)<br/>(VS:+1)</td>
+                    <td>4<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>4<br/>(IT:3)</td>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeFolk-Giant.png"/>
+                    </td>
+                    <td>Giant</dt>
+                    <td>7</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td/>
+                    <td>5</td>
+                    <td>Supportable; Two hits to kill</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeFolk-Mammoth.png"/>
+                    </td>
+                    <td>Mammoth</dt>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td/>
+                    <td>5</td>
+                    <td>Two hits to kill</td>
+                </tr>
+            </table>
+            <b>Cannot produce Knights or Sellswords.  Begins with four Giants and three Mammoths, but cannot produce more.</b>
+            <br/>
+            <b>Increased tech cost (7 instead of 5).</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - Beyond the Wall</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+10 - Over the Wall</b>:<br/>
+	    10 PUs, 3 Tech Tokens, and add capital to The Gift the first time The Gift is conquered or the Night's Watch is allied
+                </li>
+                <li>
+                    <b>+5 - Out of the North</b>:<br/>
+	    No mobile land units north of The Wall
+                </li>
+            </ul>
+
+            <h2>Dothraki</h2>
+            <b>At war with all other players.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Dothraki-Slave.png"/>
+                    </td>
+                    <td>Slave</dt>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td/>
+                    <td>2</td>
+                    <td>Cannot be purchased; 1 generated per 4 territories controlled (IT: 1 per 3 territories)</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Dothraki-HorseArcher.png"/>
+                    </td>
+                    <td>Horse Archer</dt>
+                    <td>2<br/>(LB:+1)<br/>(WT:+1)</td>
+                    <td>5<br/>(HA:+1)</td>
+                    <td>2<br/>(WT:+1)</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>+1 defense in hills terrain; (VF: Supports one unit on defense); (WT:Can blitz)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Dothraki-HorseLord.png"/>
+                    </td>
+                    <td>Horse Lord</dt>
+                    <td>4<br/>(VS:+1)<br/>(WT:+1)</td>
+                    <td>3<br/>(HA:+1)</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>(WT:Can blitz)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Dothraki-Bloodrider.png"/>
+                    </td>
+                    <td>Bloodrider</dt>
+                    <td>6<br/>(VS:+1)<br/>(WT:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>2<br/>(WT:+1)</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>Supportable; Can blitz</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Dothraki-Khal.png"/>
+                    </td>
+                    <td>Khal</dt>
+                    <td>7<br/>(VS:+1)<br/>(WT:+1)</td>
+                    <td>7<br/>(HA:+1)</td>
+                    <td>2<br/>(WT:+1)</td>
+                    <td>9</td>
+                    <td>2</td>
+                    <td>Supports three units on offense; Can blitz</td>
+                </tr>
+            </table>
+            <b>Cannot produce common units other than Castles, Rafts, and Walls; produces Slaves instead of Peasants.  (Shipyards allow production of Cogs; Carrack Construction allows production of Galleys instead of Carracks.)</b>
+            <br/>
+            <b>Cannot gain Grapeshot technology; instead gets Westerosi Tack (WT): Cavalry get +1 attack, movement 3, and can blitz.</b>
+            <br/>
+            <b>Increased tech cost (10 instead of 5).</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Dothraki Sea</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+4 - Conquer the north</b>:<br/>
+	    Control all of Saath, Vaes Graddakh, Omber, Vaes Athjikhari, Vaes Leqse, Vaes Leisi, New Ibbish, and Ibbish
+                </li>
+                <li>
+                    <b>+3 - Conquer the south</b>:<br/>
+	    Control all of Vaes Efe, Vaes Mejhah, Krazaaj Has, Kosrak, Hesh, and Lhazosh
+                </li>
+                <li>
+                    <b>+5 and +1 Tech Token each - Loot Essos</b>:<br/>
+	    5 PUs and 2 Tech Tokens the first time each major (circled) city on mainland Essos is conquered (Qohor, Norvos, Braavos, Pentos, Myr, Volantis, Meereen, Yunkai, Astapor, and Qarth)
+                </li>
+            </ul>
+
+            <h2>Arryn</h2>
+            <b>At war with Dothraki, Free Folk, Greyjoy, and Targaryen.  Ceasefire with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Arryn-MountainClansman.png"/>
+                    </td>
+                    <td>Mountain Clansman</dt>
+                    <td>4</td>
+                    <td>2<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>3<br/>(IT:2)</td>
+                    <td>2</td>
+                    <td>+1 attack in hills terrain</td>
+                </tr>
+            </table>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Vale of Arryn</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+            </ul>
+
+            <h2>Tully</h2>
+            <b>Allied with Stark.  Ceasefire with Arryn, Free Cities, Martell, Night's Watch, and Tyrell.  At war with rest.</b>
+            <br/>
+	No special units.
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Riverlands</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+4 - A foothold in the Iron Isles</b>:<br/>
+	    Control 1 in 7 of Blacktyde, Great Wyk, Old Wyk, Orkmont, Harlaw, Saltcliffe, and Pyke
+                </li>
+            </ul>
+
+            <h2>Martell</h2>
+            <b>Open Borders with Targaryen.  At war with Dothraki, Free Folk, Greyjoy, and Tyrell.  Ceasefire with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Martell-Spearman.png"/>
+                    </td>
+                    <td>Spearman</dt>
+                    <td>4<br/>(VS:+1)</td>
+                    <td>3<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>4<br/>(IT:3)</td>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Martell-HorseArcher.png"/>
+                    </td>
+                    <td>Horse Archer</dt>
+                    <td>2<br/>(LB:+1)</td>
+                    <td>5<br/>(HA:+1)</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>+1 defense in hills terrain; (VF: Supports one unit on defense)</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Sea</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Martell-GreenbloodBoat.png"/>
+                    </td>
+                    <td>Greenblood Boat</dt>
+                    <td>1<br/>(WF:+1)</td>
+                    <td>2<br/>(RH:+1)</td>
+                    <td>3<br/>(IR:+1)</td>
+                    <td>8<br/>(SY:6)</td>
+                    <td/>
+                    <td>Transport capacity 5</td>
+                </tr>
+            </table>
+            <b>Cannot produce Cogs, Knights, or Sellswords.</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - Dorne</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+4 - Rule the Sea of Dorne</b>:<br/>
+	    No enemy ships in Sea of Dorne Sea Zone; and control all adjacent land territories (Weeping Tower, Stonehelm, Wyl, Yronwood, The Tor, and Ghost Hill)
+                </li>
+                <li>
+                    <b>+3 - Conquer the Stepstones</b>:<br/>
+	    Control 4 in 5 of Greenstone, Tyrosh, Bloodstone, The Stepstones, and Lys; and no enemy ships in The Stepstones Sea Zone
+                </li>
+                <li>
+                    <b>+3 - The Mountain that Rides</b>:<br/>
+	    Lannister does not control a Giant
+                </li>
+            </ul>
+
+            <h2>Baratheon</h2>
+            <b>Open Borders with Tyrell.  Ceasefire with Arryn, Free Cities, Martell, and Night's Watch.  At war with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Baratheon-Kingsguard.png"/>
+                    </td>
+                    <td>Kingsguard</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>Can blitz; Two hits to kill; Can't control more than 7; Can only be built in King's Landing</td>
+                </tr>
+            </table>
+            <b>Begins with three Kingsguard, but cannot produce more unless King's Landing is captured.</b>
+            <br/>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Stormlands</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+3 - A Trueborn King</b>:<br/>
+	    Control King's Landing
+                </li>
+                <li>
+                    <b>+3 - Secure Blackwater Bay</b>:<br/>
+	    No enemy ships in The Gullet Sea Zone or Blackwater Bay Sea Zone; and allies control all adjacent land territories (Crackclaw Point, Rook's Rest, Duskendale, Rosby, King's Landing, South Crownlands, Stonedance, Driftmark, Dragonstone)
+                </li>
+            </ul>
+
+            <h2>Stark</h2>
+            <b>Allied with Tully.  Open Borders with Night's Watch.  Ceasefire with Arryn, Free Cities, Martell, and Tyrell.  At war with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Stark-MountainClansman.png"/>
+                    </td>
+                    <td>Mountain Clansman</dt>
+                    <td>4</td>
+                    <td>2<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td/>
+                    <td>2</td>
+                    <td>+1 attack in hills terrain</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Stark-Northman.png"/>
+                    </td>
+                    <td>Northman</dt>
+                    <td>4<br/>(VS:+1)</td>
+                    <td>4<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>4<br/>(IT:3)</td>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Stark-Direwolf.png"/>
+                    </td>
+                    <td>Direwolf</dt>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td/>
+                    <td>3</td>
+                    <td>Two hits to kill</td>
+                </tr>
+            </table>
+            <b>Begins with five Direwolves and six Mountain Clansmen, but cannot produce more.</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The North</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+            </ul>
+
+            <h2>Tyrell</h2>
+            <b>Open Borders with Baratheon and Lannister.  At war with Dothraki, Free Folk, Greyjoy, and Martell.  Ceasefire with rest.</b>
+            <br/>
+	No special units.
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Reach</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+5 - A Queen in King's Landing</b>:<br/>
+	    Allies control King's Landing
+                </li>
+            </ul>
+
+            <h2>Lannister</h2>
+            <b>Open Borders with Tyrell.  Ceasefire with Arryn, Free Cities, Martell, and Night's Watch.  At war with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Lannister-Goldcloak.png"/>
+                    </td>
+                    <td>Goldcloak</dt>
+                    <td>3</td>
+                    <td>3<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>2.5<br/>(IT:1.67)</td>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Lannister-Giant.png"/>
+                    </td>
+                    <td>Giant</dt>
+                    <td>7</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td/>
+                    <td>5</td>
+                    <td>Supportable; Two hits to kill</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Lannister-Kingsguard.png"/>
+                    </td>
+                    <td>Kingsguard</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>Can blitz; Two hits to kill; Can't control more than 7; Can only be built in King's Landing</td>
+                </tr>
+            </table>
+            <b>Cannot produce Sellswords.  Begins with one Giant, but cannot produce more.</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Westerlands</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+3 - Conquer the Riverlands</b>:<br/>
+	    Control all of Raventree Hall, Riverrun, Pinkmaiden, and Stoney Sept
+                </li>
+                <li>
+                    <b>+3 - Subdue the Reach</b>:<br/>
+	    Allies control all of Old Oak, Red Lake, Golden Grove, and Standfast
+                </li>
+                <li>
+                    <b>+2 - Rule in King's Landing</b>:<br/>
+	    Control King's Landing
+                </li>
+            </ul>
+
+            <h2>Free Cities</h2>
+            <b>At war with Dothraki, Free Folk, and Targaryen.  Ceasefire with rest.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeCities-Slave.png"/>
+                    </td>
+                    <td>Slave</dt>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td/>
+                    <td>2</td>
+                    <td>Cannot be purchased; 1 generated per 4 territories controlled (IT: 1 per 3 territories)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeCities-WaterDancer.png"/>
+                    </td>
+                    <td>Water Dancer</dt>
+                    <td>5<br/>(VS:+1)</td>
+                    <td>5<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>6<br/>(IT:4)</td>
+                    <td>2</td>
+                    <td>Supportable</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeCities-Unsullied.png"/>
+                    </td>
+                    <td>Unsullied</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>6<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td/>
+                    <td>2</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="FreeCities-FacelessMan.png"/>
+                    </td>
+                    <td>Faceless Man</dt>
+                    <td>6<br/>(VS:+1)</td>
+                    <td>4<br/>(HA:+1)</td>
+                    <td>1</td>
+                    <td>16<br/>(IT:12)</td>
+                    <td>2</td>
+                    <td>Supportable; Two hits to kill</td>
+                </tr>
+            </table>
+            <b>Cannot produce Knights; produces Slaves instead of Peasants.  Begins with six Unsullied, but cannot produce more.</b>
+            <br/>
+            <b>Cost of all common units increased by 1 PU.</b>
+            <br/>
+            <b>Increased tech cost (7 instead of 5).</b>
+            <h3>Objectives:</h3>
+            <ul>
+                <li>
+                    <b>+1 each - The Free Cities</b>:<br/>
+	    1 PU for each originally-owned territory still controlled
+                </li>
+                <li>
+                    <b>+3 - The Iron Bank</b>:<br/>
+	    Research tech War Bonds
+                </li>
+                <li>
+                    <b>+3 - Control the Narrow Sea</b>:<br/>
+	    No enemy ships adjacent to the east coast of the Narrow Sea between Braavos and Lys (Waters of Braavos Sea Zone, Longbow Rapids Sea Zone, North Narrow Sea Zone, South Narrow Sea Zone, Sea of Myrth Sea Zone, The Stepstones Sea Zone)
+                </li>
+            </ul>
+
+            <h2>Others</h2>
+            <b>At war with all other players.</b>
+            <table border="1">
+                <tr>
+                    <th colspan="8">Infantry</th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Att</th>
+                    <th>Def</th>
+                    <th>Move</th>
+                    <th>Cost</th>
+                    <th>Size</th>
+                    <th>Special</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Others-Wight.png"/>
+                    </td>
+                    <td>Wight</dt>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td/>
+                    <td/>
+                    <td>No bonuses for terrain or fortification</td>
+                </tr>
+                <tr>
+                    <th colspan="8">Cavalry</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Others-Other.png"/>
+                    </td>
+                    <td>Other</dt>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td/>
+                    <td/>
+                    <td>Can blitz; Two hits to kill; Generates 1 Wight each turn; No penalties for terrain</td>
+                </tr>
+            </table>
+            <b>No tech or objectives and cannot purchase units.  Units automatically generated in The Frostfangs.</b>
+            <br/>
+            <br/>
+            Map image by: Astrogator87 at https://www.deviantart.com/astrogator87/art/Map-of-Westeros-Essos-and-parts-of-Sothoros-288550923
+        </div>
+    </body>
+</html>
